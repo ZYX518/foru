@@ -4,6 +4,13 @@
     "ignore": []
   },
   "setting": {
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./miniprogram/"
+      }
+    ],
     "urlCheck": false,
     "es6": true,
     "enhance": false,
@@ -41,7 +48,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
   "appid": "wx7847e75ac0495ea4",
-  "projectname": "yinghuo",
+  "projectname": "YH",
   "debugOptions": {
     "hidedInDevtools": []
   },
@@ -69,4 +76,5 @@
       "list": []
     }
   }
+  
 }

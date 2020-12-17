@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "Swiper":"./component/component",
+    "van-button":"../../miniprogram_npm/vant-weapp/button",
+    "van-icon":"../../miniprogram_npm/vant-weapp/icon",
+    "van-divider":"../../miniprogram_npm/@vant/weapp/divider"
+    
+  },
+  "navigationBarTitleText": "萤火小程序商场",
+  "navigationBarBackgroundColor": "#00ff00"
+  
+
+}

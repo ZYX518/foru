@@ -1,0 +1,17 @@
+<!--pages/home/component/component.wxml-->
+<view class="swiper1">
+  <swiper class="a" indicator-dots="true"
+        autoplay="true" circular="true"
+        indicator-active-color="#ffffff">
+        <block>
+          <swiper-item>
+            <image class="a" src="{{$state.home.img1}}"></image>
+          </swiper-item>
+        </block>
+        <block>
+          <swiper-item>
+            <image class="a" src="{{$state.home.img2}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+</view>

@@ -1,0 +1,49 @@
+<!--pages/home/home.wxml-->
+<view class="root">
+  <!-- 搜索跳转按钮 -->
+  <view class="top">
+    <button class="input">搜索商品</button>
+  </view>
+<!-- 轮播图组件 -->
+<Swiper class="cc"/>
+  <!-- 新品推荐 -->
+<view class="text">新品推荐</view>
+<view class="top2">
+  <!-- 横向滚动 -->
+  <scroll-view scroll-x="true" bindscroll="scroll">
+    <view class="page-column" wx:for="{{$state.home.arr2}}" wx:key="index">
+      <view class="sale_img">
+      <image class="img" src="{{item.image[0].file_path}}"></image>
+    </view>
+    <view class="name">
+      <text>{{item.goods_name}}</text>
+    </view>
+    <text class="price">￥ {{item.spec[0].goods_price}}</text>
+    </view>
+  </scroll-view>
+</view>
+<!-- 线框 -->
+<view class="xian">
+  <van-divider  contentPosition="center"><van-icon name="fire" color="#ff495e"/>猜您喜欢</van-divider>
+</view>
+<!-- 商品内容 -->
+<view class="box-1">
+  <view class="box-2" wx:for="{{$state.home.arr1}}">
+<view class="left">
+<image class="img-1" src="{{item.image[0].file_path}}"></image>
+</view>
+<view class="right">
+<text class="t1">{{item.goods_name}}</text>
+<text class="t2">￥ {{item.spec[0].goods_price}}</text>
+</view>
+  </view>
+  <!-- 底部实线 -->
+  <view class="xian2">
+  <van-divider  contentPosition="center"><text style="color:gainsboro">我是有底线的</text></van-divider>
+</view>
+
+</view>
+
+
+
+</view>

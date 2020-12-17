@@ -1,5 +1,34 @@
 //app.js
+import Store from 'wxministore';
+// store中
+let store = new Store({
+  //状态
+  state: {
+    //...
+    home:{
+      //新品推荐
+      arr1:'',
+      //猜你喜欢
+      arr2:'',
+    },
+    img1:'',
+    img2:'',
+
+  },
+  //方法
+  methods: {
+    //...
+  },
+  //页面监听
+  pageListener: {
+    onLoad(options) {
+      // console.log("我在" + this.route, "参数为", options);
+    },
+  },
+});
+console.log(store.$state.home);
 App({
+  store: store,
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
